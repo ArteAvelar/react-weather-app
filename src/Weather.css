@@ -1,3 +1,53 @@
 .Weather {
-  border: 1px solid black;
+  display: block;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+  margin: 20px auto;
+
+  margin-bottom: 0;
+  border: 1px solid #e7eaf6;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.Weather h1 {
+  padding-bottom: 0;
+}
+
+.Weather ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Weather form {
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid, black;
+}
+
+.Weather .btn {
+  background-color: rgb(119, 98, 140);
+  border-color: rgb(119, 98, 140);
+}
+
+.Weather .temperature {
+  font-family: "Radio Canada", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.Weather img {
+  position: relative;
+  left: -20px;
+  top: -25px;
+}
+
+.Weather .units {
+  position: relative;
+  top: -45px;
+  font-size: 20px;
 }

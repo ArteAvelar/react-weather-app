@@ -1,3 +1,9 @@
 .App footer {
   font-size: 10px;
 }
+.App {
+  display: block;
+  margin: 0 auto;
+  font-family: "Secular One", sans-serif;
+  max-width: 600px;
+}
