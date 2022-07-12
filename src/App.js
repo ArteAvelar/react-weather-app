@@ -1,11 +1,31 @@
 import "./App.css";
+import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>hello World</h1>
+      <div className="container">
+        <Weather />
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="https://magnificent-buttercream-4c8fea.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Artemisa Avelar
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/ArteAvelar/react-weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open source
+          </a>{" "}
+          on Github
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
