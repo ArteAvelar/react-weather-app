@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import Date from "./Date";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ loaded: false });
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       loaded: true,
       temperature: response.data.main.temp,
       city: response.data.name,
       wind: response.data.wind.speed,
-
+      date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       icon: "http://openweathermap.org/img/wn/02d@2x.png",
     });
+    console.log(weatherData.date);
   }
 
   if (weatherData.loaded) {
@@ -41,7 +44,9 @@ export default function Weather(props) {
         </form>
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>Monday 7:00</li>
+          <li>
+            <Date date={weatherData.date} />
+          </li>
         </ul>
         <div className="row">
           <div className="col-6">
