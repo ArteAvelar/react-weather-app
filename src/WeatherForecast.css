@@ -1,5 +1,6 @@
 .weatherForecast {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .weatherForecast .forecast-temp-min {
